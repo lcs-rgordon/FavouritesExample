@@ -22,8 +22,24 @@ struct FavouritesExampleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                FlavoursList(store: store)
+            
+            TabView {
+                
+                NavigationView {
+                    FlavoursList(store: store)
+                }
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Flavours")
+                }
+
+                NavigationView {
+                    FavouritesList(store: store)
+                }
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                    Text("Favourites")
+                }
             }
         }
         .onChange(of: scenePhase) { newPhase in

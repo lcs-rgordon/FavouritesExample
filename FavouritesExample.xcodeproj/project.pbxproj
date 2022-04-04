@@ -16,6 +16,7 @@
 		81D4B21E27FB810B00873618 /* FlavoursList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21D27FB810B00873618 /* FlavoursList.swift */; };
 		81D4B22027FB812D00873618 /* FlavourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21F27FB812D00873618 /* FlavourCell.swift */; };
 		81D4B22327FB883900873618 /* SharedFunctionsAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B22227FB883900873618 /* SharedFunctionsAndConstants.swift */; };
+		81D4B22527FB8B6F00873618 /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B22427FB8B6F00873618 /* FavouritesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		81D4B21D27FB810B00873618 /* FlavoursList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavoursList.swift; sourceTree = "<group>"; };
 		81D4B21F27FB812D00873618 /* FlavourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavourCell.swift; sourceTree = "<group>"; };
 		81D4B22227FB883900873618 /* SharedFunctionsAndConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFunctionsAndConstants.swift; sourceTree = "<group>"; };
+		81D4B22427FB8B6F00873618 /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		81D4B21327FB734900873618 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81D4B22427FB8B6F00873618 /* FavouritesList.swift */,
 				81D4B21D27FB810B00873618 /* FlavoursList.swift */,
 				81D4B21F27FB812D00873618 /* FlavourCell.swift */,
 			);
@@ -187,6 +190,7 @@
 			files = (
 				81D4B22327FB883900873618 /* SharedFunctionsAndConstants.swift in Sources */,
 				81D4B21527FB736600873618 /* IceCreamFlavour.swift in Sources */,
+				81D4B22527FB8B6F00873618 /* FavouritesList.swift in Sources */,
 				81D4B21A27FB7EDC00873618 /* IceCreamFlavourStore.swift in Sources */,
 				81D4B21E27FB810B00873618 /* FlavoursList.swift in Sources */,
 				81D4B20527FB6F2700873618 /* FavouritesExampleApp.swift in Sources */,

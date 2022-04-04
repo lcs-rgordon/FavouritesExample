@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct FlavourCell: View {
-    
+
+    // MARK: Stored properties
     @ObservedObject var currentFlavour: IceCreamFlavour
     
+    // MARK: Computed properties
     var body: some View {
         HStack {
             //                   CONDITION                  when true : when false
@@ -21,7 +23,10 @@ struct FlavourCell: View {
                 .padding(5)
                 .foregroundColor(currentFlavour.isFavourite ? .red : .secondary)
                 .onTapGesture {
+                    
+                    // Change the object in the flavours store
                     currentFlavour.isFavourite.toggle()
+                    
                 }
             
             Image(currentFlavour.heroImage)

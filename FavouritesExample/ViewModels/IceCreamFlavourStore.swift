@@ -11,7 +11,7 @@ import Foundation
 class IceCreamFlavoursStore: ObservableObject {
     
     // MARK: Stored properties
-    var flavours: [IceCreamFlavour]
+    @Published var flavours: [IceCreamFlavour]
         
     // MARK: Initializers
     init() {
