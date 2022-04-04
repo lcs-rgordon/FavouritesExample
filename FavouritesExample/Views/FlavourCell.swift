@@ -13,6 +13,17 @@ struct FlavourCell: View {
     
     var body: some View {
         HStack {
+            //                   CONDITION                  when true : when false
+            Image(systemName: currentFlavour.isFavourite ? "heart.fill" : "heart")
+                .resizable()
+                .frame(width: 20, height: 20)
+                .scaledToFit()
+                .padding(5)
+                .foregroundColor(currentFlavour.isFavourite ? .red : .secondary)
+                .onTapGesture {
+                    currentFlavour.isFavourite.toggle()
+                }
+            
             Image(currentFlavour.heroImage)
                 .resizable()
                 .scaledToFit()
