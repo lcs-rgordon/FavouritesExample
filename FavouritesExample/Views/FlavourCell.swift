@@ -10,6 +10,7 @@ import SwiftUI
 struct FlavourCell: View {
 
     // MARK: Stored properties
+    @ObservedObject var store: IceCreamFlavoursStore
     @ObservedObject var currentFlavour: IceCreamFlavour
     
     // MARK: Computed properties
@@ -26,6 +27,12 @@ struct FlavourCell: View {
                     
                     // Change the object in the flavours store
                     currentFlavour.isFavourite.toggle()
+                    
+                    // Used to ensure SwiftUI recomputes the view
+                    // the shows the lists of favourite flavours
+                    withAnimation {
+                        store.favouriteStateChanged.toggle()
+                    }
                     
                 }
             
@@ -46,6 +53,7 @@ struct FlavourCell: View {
 
 struct FlavourCell_Previews: PreviewProvider {
     static var previews: some View {
-        FlavourCell(currentFlavour: testStore.flavours.first!)
+        FlavourCell(store: testStore,
+                    currentFlavour: testStore.flavours.first!)
     }
 }

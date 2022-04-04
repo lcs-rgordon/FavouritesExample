@@ -12,6 +12,10 @@ class IceCreamFlavoursStore: ObservableObject {
     
     // MARK: Stored properties
     @Published var flavours: [IceCreamFlavour]
+    
+    // Toggled when the contents of an existing flavour have changed
+    // ie.: when a flavour is marked as a favourite or not
+    @Published var favouriteStateChanged = false
         
     // MARK: Initializers
     init() {

@@ -19,7 +19,8 @@ struct FlavoursList: View {
     // MARK: Computed properties
     var body: some View {
         List(store.flavours) { flavour in
-            FlavourCell(currentFlavour: flavour)
+            FlavourCell(store: store,
+                        currentFlavour: flavour)
         }
         .navigationTitle("Flavours")
     }

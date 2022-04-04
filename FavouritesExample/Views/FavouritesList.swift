@@ -22,7 +22,8 @@ struct FavouritesList: View {
         List(store.flavours.filter({ currentFlavour in
             return currentFlavour.isFavourite
         })) { flavour in
-            FlavourCell(currentFlavour: flavour)
+            FlavourCell(store: store,
+                        currentFlavour: flavour)
         }
         .navigationTitle("Favourites")
     }
