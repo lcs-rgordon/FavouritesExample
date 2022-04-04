@@ -15,6 +15,7 @@
 		81D4B21A27FB7EDC00873618 /* IceCreamFlavourStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21927FB7EDC00873618 /* IceCreamFlavourStore.swift */; };
 		81D4B21E27FB810B00873618 /* FlavoursList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21D27FB810B00873618 /* FlavoursList.swift */; };
 		81D4B22027FB812D00873618 /* FlavourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21F27FB812D00873618 /* FlavourCell.swift */; };
+		81D4B22327FB883900873618 /* SharedFunctionsAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B22227FB883900873618 /* SharedFunctionsAndConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		81D4B21927FB7EDC00873618 /* IceCreamFlavourStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavourStore.swift; sourceTree = "<group>"; };
 		81D4B21D27FB810B00873618 /* FlavoursList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavoursList.swift; sourceTree = "<group>"; };
 		81D4B21F27FB812D00873618 /* FlavourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavourCell.swift; sourceTree = "<group>"; };
+		81D4B22227FB883900873618 /* SharedFunctionsAndConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFunctionsAndConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				81D4B20427FB6F2700873618 /* FavouritesExampleApp.swift */,
+				81D4B22127FB882F00873618 /* Helpers */,
 				81D4B21227FB734400873618 /* Model */,
 				81D4B21327FB734900873618 /* Views */,
 				81D4B21827FB7EA700873618 /* ViewModels */,
@@ -101,6 +104,14 @@
 				81D4B21927FB7EDC00873618 /* IceCreamFlavourStore.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		81D4B22127FB882F00873618 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81D4B22227FB883900873618 /* SharedFunctionsAndConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D4B22327FB883900873618 /* SharedFunctionsAndConstants.swift in Sources */,
 				81D4B21527FB736600873618 /* IceCreamFlavour.swift in Sources */,
 				81D4B21A27FB7EDC00873618 /* IceCreamFlavourStore.swift in Sources */,
 				81D4B21E27FB810B00873618 /* FlavoursList.swift in Sources */,
