@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		81D4B20527FB6F2700873618 /* FavouritesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B20427FB6F2700873618 /* FavouritesExampleApp.swift */; };
-		81D4B20727FB6F2700873618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B20627FB6F2700873618 /* ContentView.swift */; };
 		81D4B20927FB6F2800873618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D4B20827FB6F2800873618 /* Assets.xcassets */; };
 		81D4B20C27FB6F2800873618 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D4B20B27FB6F2800873618 /* Preview Assets.xcassets */; };
+		81D4B21527FB736600873618 /* IceCreamFlavour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21427FB736600873618 /* IceCreamFlavour.swift */; };
+		81D4B21727FB79F000873618 /* flavours.json in Resources */ = {isa = PBXBuildFile; fileRef = 81D4B21627FB79F000873618 /* flavours.json */; };
+		81D4B21A27FB7EDC00873618 /* IceCreamFlavourStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21927FB7EDC00873618 /* IceCreamFlavourStore.swift */; };
+		81D4B21E27FB810B00873618 /* FlavoursList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21D27FB810B00873618 /* FlavoursList.swift */; };
+		81D4B22027FB812D00873618 /* FlavourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4B21F27FB812D00873618 /* FlavourCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81D4B20127FB6F2700873618 /* FavouritesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouritesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D4B20427FB6F2700873618 /* FavouritesExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesExampleApp.swift; sourceTree = "<group>"; };
-		81D4B20627FB6F2700873618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81D4B20827FB6F2800873618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81D4B20B27FB6F2800873618 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81D4B21427FB736600873618 /* IceCreamFlavour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavour.swift; sourceTree = "<group>"; };
+		81D4B21627FB79F000873618 /* flavours.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flavours.json; sourceTree = "<group>"; };
+		81D4B21927FB7EDC00873618 /* IceCreamFlavourStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavourStore.swift; sourceTree = "<group>"; };
+		81D4B21D27FB810B00873618 /* FlavoursList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavoursList.swift; sourceTree = "<group>"; };
+		81D4B21F27FB812D00873618 /* FlavourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavourCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				81D4B20427FB6F2700873618 /* FavouritesExampleApp.swift */,
-				81D4B20627FB6F2700873618 /* ContentView.swift */,
+				81D4B21227FB734400873618 /* Model */,
+				81D4B21327FB734900873618 /* Views */,
+				81D4B21827FB7EA700873618 /* ViewModels */,
 				81D4B20827FB6F2800873618 /* Assets.xcassets */,
 				81D4B20A27FB6F2800873618 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				81D4B20B27FB6F2800873618 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81D4B21227FB734400873618 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81D4B21427FB736600873618 /* IceCreamFlavour.swift */,
+				81D4B21627FB79F000873618 /* flavours.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81D4B21327FB734900873618 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81D4B21D27FB810B00873618 /* FlavoursList.swift */,
+				81D4B21F27FB812D00873618 /* FlavourCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81D4B21827FB7EA700873618 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				81D4B21927FB7EDC00873618 /* IceCreamFlavourStore.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D4B21727FB79F000873618 /* flavours.json in Resources */,
 				81D4B20C27FB6F2800873618 /* Preview Assets.xcassets in Resources */,
 				81D4B20927FB6F2800873618 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D4B20727FB6F2700873618 /* ContentView.swift in Sources */,
+				81D4B21527FB736600873618 /* IceCreamFlavour.swift in Sources */,
+				81D4B21A27FB7EDC00873618 /* IceCreamFlavourStore.swift in Sources */,
+				81D4B21E27FB810B00873618 /* FlavoursList.swift in Sources */,
 				81D4B20527FB6F2700873618 /* FavouritesExampleApp.swift in Sources */,
+				81D4B22027FB812D00873618 /* FlavourCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

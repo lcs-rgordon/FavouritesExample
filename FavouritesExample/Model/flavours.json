@@ -1,0 +1,183 @@
+[
+    {
+        "name": "Amazin Raisin",
+        "heroImage": "Amazin-Raisin",
+        "isFavourite": false,
+        "id": 2
+    },
+    {
+        "name": "Banana",
+        "heroImage": "Banana",
+        "isFavourite": false,
+        "id": 3
+    },
+    {
+        "name": "Baseball Nut",
+        "heroImage": "Baseball-Nut",
+        "isFavourite": false,
+        "id": 4
+    },
+    {
+        "name": "Blue Raspberry Sherbet",
+        "heroImage": "Blue-Raspberry-Sherbet",
+        "isFavourite": false,
+        "id": 5
+    },
+    {
+        "name": "Caramel Chocolate Chunk",
+        "heroImage": "Caramel-Chocolate-Chunk",
+        "isFavourite": false,
+        "id": 6
+    },
+    {
+        "name": "Caramel Praline Cheesecake",
+        "heroImage": "Caramel-Praline-Cheesecake",
+        "isFavourite": false,
+        "id": 7
+    },
+    {
+        "name": "Caramel Turtle Truffle",
+        "heroImage": "Caramel-Turtle-Truffle",
+        "isFavourite": false,
+        "id": 8
+    },
+    {
+        "name": "Chocolate",
+        "heroImage": "Chocolate",
+        "isFavourite": false,
+        "id": 9
+    },
+    {
+        "name": "Chocolate Almond",
+        "heroImage": "Chocolate-Almond",
+        "isFavourite": false,
+        "id": 10
+    },
+    {
+        "name": "Chocolate Chip",
+        "heroImage": "Chocolate-Chip",
+        "isFavourite": false,
+        "id": 11
+    },
+    {
+        "name": "Chocolate Chip Cookie Dough",
+        "heroImage": "Chocolate-Chip-Cookie-Dough",
+        "isFavourite": false,
+        "id": 12
+    },
+    {
+        "name": "Chocolate Cookie Crackle",
+        "heroImage": "Chocolate-Cookie-Crackle",
+        "isFavourite": false,
+        "id": 13
+    },
+    {
+        "name": "Chocolate Mousse Royale",
+        "heroImage": "Chocolate-Mousse-Royale",
+        "isFavourite": false,
+        "id": 14
+    },
+    {
+        "name": "Chocolate Trilogy",
+        "heroImage": "Chocolate-Trilogy",
+        "isFavourite": false,
+        "id": 15
+    },
+    {
+        "name": "Citrus Twist Ice",
+        "heroImage": "Citrus-Twist-Ice",
+        "isFavourite": false,
+        "id": 16
+    },
+    {
+        "name": "Coconut",
+        "heroImage": "Coconut",
+        "isFavourite": false,
+        "id": 17
+    },
+    {
+        "name": "Cookies n Creme",
+        "heroImage": "Cookies-n-Creme",
+        "isFavourite": false,
+        "id": 18
+    },
+    {
+        "name": "Cotton Candy",
+        "heroImage": "Cotton-Candy",
+        "isFavourite": false,
+        "id": 19
+    },
+    {
+        "name": "Cotton Candy Wonderland",
+        "heroImage": "Cotton-Candy-Wonderland",
+        "isFavourite": false,
+        "id": 20
+    },
+    {
+        "name": "Dulce De Leche",
+        "heroImage": "Dulce-De-Leche",
+        "isFavourite": false,
+        "id": 21
+    },
+    {
+        "name": "Gold Medal Ribbon",
+        "heroImage": "Gold-Medal-Ribbon",
+        "isFavourite": false,
+        "id": 22
+    },
+    {
+        "name": "Green Tea",
+        "heroImage": "Green-Tea",
+        "isFavourite": false,
+        "id": 23
+    },
+    {
+        "name": "Hokey Pokey",
+        "heroImage": "Hokey-Pokey",
+        "isFavourite": false,
+        "id": 24
+    },
+    {
+        "name": "Jamoca",
+        "heroImage": "Jamoca",
+        "isFavourite": false,
+        "id": 25
+    },
+    {
+        "name": "Jamoca Almond Fudge",
+        "heroImage": "Jamoca Almond Fudge",
+        "isFavourite": false,
+        "id": 26
+    },
+    {
+        "name": "Love Potion #31",
+        "heroImage": "Love-Potion-#31",
+        "isFavourite": false,
+        "id": 27
+    },
+    {
+        "name": "Macademia Nuts 'n Creme",
+        "heroImage": "Macademia-Nuts-'n-Creme",
+        "isFavourite": false,
+        "id": 28
+    },
+    {
+        "name": "Mango Tango",
+        "heroImage": "Mango-Tango",
+        "isFavourite": false,
+        "id": 29
+    },
+    {
+        "name": "Muai Brownie Madness",
+        "heroImage": "Muai-Brownie-Madness",
+        "isFavourite": false,
+        "id": 30
+    },
+    {
+        "name": "Popping Shower",
+        "heroImage": "Popping-Shower",
+        "isFavourite": false,
+        "id": 31
+    }
+]
+ 
