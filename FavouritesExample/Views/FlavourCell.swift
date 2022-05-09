@@ -76,14 +76,9 @@ struct FlavourCell: View {
 
 struct FlavourCell_Previews: PreviewProvider {
     
-    /*
-     "name": "Amazin Raisin",
-     "heroImage": "Amazin-Raisin",
-     "isFavourite": false,
-     "id": 2
-     */
     static var previews: some View {
         FlavourCell(currentFlavour: testFlavour,
                     availableFlavours: .constant(testFlavoursList))
     }
+    
 }
