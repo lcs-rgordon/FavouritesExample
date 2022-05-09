@@ -20,9 +20,6 @@ struct FavouritesList: View {
         Group {
             // Only show flavours that are marked as a favourite
             List(availableFlavours
-//                .sorted { leftFlavour, rightFlavour in
-//                    leftFlavour.id > rightFlavour.id
-//                }
                 .filter { currentFlavour in
                     return currentFlavour.isFavourite
                 }

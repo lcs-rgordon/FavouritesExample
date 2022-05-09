@@ -18,9 +18,6 @@ struct FlavoursList: View {
     // MARK: Computed properties
     var body: some View {
         List(availableFlavours
-//             .sorted { leftFlavour, rightFlavour in
-//                 leftFlavour.name > rightFlavour.name
-//             }
         ) { flavour in
             FlavourCell(currentFlavour: flavour,
                         availableFlavours: $availableFlavours)

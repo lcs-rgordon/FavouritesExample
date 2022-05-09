@@ -46,21 +46,16 @@ struct FlavourCell: View {
 
                     // Make a new list of the flavours, sorted by name
                     let newSortedListOfFlavours = availableFlavours
-                        .sorted{ leftFlavour, rightFlavour in
-                            leftFlavour.id < rightFlavour.id
-                        }
+                                                    .sorted{ leftFlavour, rightFlavour in
+                                                        leftFlavour.id < rightFlavour.id
+                                                    }
 
-                    // Remove all flavours from the existing list of flavours
+                    // Remove all flavours from the existing list of available flavours
                     availableFlavours.removeAll()
                     
-                    // Add the sorted list of flavours back in to the master list of flavours
+                    // Add the sorted list of flavours back in to the main list of available flavours
                     availableFlavours.append(contentsOf: newSortedListOfFlavours)
 
-                    // Used to ensure SwiftUI recomputes the view
-                    // the shows the lists of favourite flavours
-//                    withAnimation {
-//                        store.favouriteStateChanged.toggle()
-//                    }
                     
                 }
             
