@@ -11,16 +11,19 @@ struct FlavoursList: View {
     
     // MARK: Stored properties
     
-    // Needs a reference to the store of locations
+    // Needs a reference to the list of available flavours
     // This is a derived value, from the source of truth at the app level
-    // Provides a reference to the view model for locations
-    @ObservedObject var store: IceCreamFlavoursStore
+    @Binding var availableFlavours: [IceCreamFlavour]
 
     // MARK: Computed properties
     var body: some View {
-        List(store.flavours) { flavour in
-            FlavourCell(store: store,
-                        currentFlavour: flavour)
+        List(availableFlavours
+//             .sorted { leftFlavour, rightFlavour in
+//                 leftFlavour.name > rightFlavour.name
+//             }
+        ) { flavour in
+            FlavourCell(currentFlavour: flavour,
+                        availableFlavours: $availableFlavours)
         }
         .navigationTitle("Flavours")
     }
@@ -28,6 +31,6 @@ struct FlavoursList: View {
 
 struct FlavoursList_Previews: PreviewProvider {
     static var previews: some View {
-        FlavoursList(store: testStore)
+        FlavoursList(availableFlavours: .constant(testFlavoursList))
     }
 }
