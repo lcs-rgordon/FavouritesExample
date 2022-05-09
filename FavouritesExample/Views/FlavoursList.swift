@@ -17,10 +17,17 @@ struct FlavoursList: View {
 
     // MARK: Computed properties
     var body: some View {
+        // DEBUG
+//        let _ = print("----")
+        
         List(availableFlavours
         ) { flavour in
             FlavourCell(currentFlavour: flavour,
                         availableFlavours: $availableFlavours)
+            
+        // DEBUG
+//            let _ = print("Current flavour is \(flavour.name) and it's favourite status is: \(flavour.isFavourite)")
+            
         }
         .navigationTitle("Flavours")
     }

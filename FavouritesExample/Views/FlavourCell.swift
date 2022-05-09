@@ -10,7 +10,7 @@ import SwiftUI
 struct FlavourCell: View {
 
     // MARK: Stored properties
-    @State var currentFlavour: IceCreamFlavour
+    let currentFlavour: IceCreamFlavour
     
     // Needs a reference to the list of available flavours
     // This is a derived value, from the source of truth at the app level
@@ -28,11 +28,11 @@ struct FlavourCell: View {
                 .foregroundColor(currentFlavour.isFavourite ? .red : .secondary)
                 .onTapGesture {
                     
-                    // Change flavour's favourite status
-                    currentFlavour.isFavourite.toggle()
-                    
-                    // Make a copy of this flavour
-                    let copyOfCurrentFlavour = currentFlavour
+                    // Make a copy of this flavour, with favourite status changed to opposite
+                    let copyOfCurrentFlavour = IceCreamFlavour(id: currentFlavour.id,
+                                                               name: currentFlavour.name,
+                                                               heroImage: currentFlavour.heroImage,
+                                                               isFavourite: !currentFlavour.isFavourite)
                     
                     // Remove the current flavour from the list
                     // This iterates over the entire "availableFlavours" list, looking
@@ -55,7 +55,6 @@ struct FlavourCell: View {
                     
                     // Add the sorted list of flavours back in to the main list of available flavours
                     availableFlavours.append(contentsOf: newSortedListOfFlavours)
-
                     
                 }
             
