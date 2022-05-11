@@ -18,14 +18,19 @@ struct FavouritesList: View {
     var body: some View {
         
         Group {
-            // Only show flavours that are marked as a favourite
+            // Filters the list of available flavours,
+            // showing only flavours that are marked as a favourite
             List(availableFlavours
-                .filter { currentFlavour in
-                    return currentFlavour.isFavourite
-                }
+                    .filter { currentFlavour in
+                        // Returns "true" when the current flavour is, in fact, a favourite
+                        return currentFlavour.isFavourite == true
+                    }
             ) { flavour in
+
+                // Show the cell for what must be a favourite flavour
                 FlavourCell(currentFlavour: flavour,
                             availableFlavours: $availableFlavours)
+                
             }
 
         }
